@@ -1,0 +1,86 @@
+   body {background-image: url("../slices/bg7.jpg");color:#FFFFFF;}
+   a:visited { color: #FFFFFF; text-decoration:none; }
+   a:hover { color: #FFFFFF; text-decoration:none; }
+   a:active { color: #FFFFFF; text-decoration:none; }
+   a { color: #FFFFFF; text-decoration:none;}
+   h2 { color: #FFFFFF;font-size:1,5em; }
+   .nav-tabs { border-bottom: 0px solid #ddd; }
+   .slices {padding-left:20px!important;padding-right:10px!important;padding-bottom:5px;}
+   .round {border-radius:5px;}
+   img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.00);
+  }
+  .container2{
+    height:100%;
+  }
+  .rss{
+    overflow-y: scroll;
+    padding-left:20px;
+    margin-top: 10px;
+    background: hsla(250,10%,20%,0.5);
+    border-radius: 10px;
+    max-height: 84vh;
+    min-width:450px;
+    font-size:0.9em;
+
+  }
+
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFFFFF;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFFFFF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFFFFF;
+}
+
+
+.override{
+  display:inherit;
+ height:60px;
+
+}
+  #fng {
+    height:150px;
+    width: 150px;
+
+  }
+
+  #chart-area, #widget-container, .tv-main-panel {background: #fff;}
+  .chart-page .chart-container {border: black solid 0;}
+  .chart {width: 400px;height:300px; margin-right:10px;}
+
+  img:hover {
+
+
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .2s ease-in-out;  
+  }
+  #search-bar {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    width: 500px;
+    padding: 5px 0px 10px 0px;
+    min-width: 20%;
+    display: initial;
+    margin-left: 60px;
+    font-size: 1.5em;
+    outline: none;
+    color: #FFFFFF;
+    margin: 0px; }
+    #submit-button {
+      display: none; }
+      #searchbar:hover, #searchbar:active, #searchbar:focus {
+        box-shadow: 0px 5px 20px rgba(37, 37, 63, 0.3); }
+        #search-form {
+          margin-top: 2em;
+          text-align: center;}

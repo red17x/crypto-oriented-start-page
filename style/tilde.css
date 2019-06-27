@@ -1,0 +1,199 @@
+
+
+/* to download a different font locally:
+     https://google-webfonts-helper.herokuapp.com/fonts */
+
+/* @font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('./fonts/lato-v14-latin-regular.woff2') format('woff2'),
+        url('./fonts/lato-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'),
+        url('./fonts/lato-v14-latin-900.woff2') format('woff2'),
+        url('./fonts/lato-v14-latin-900.woff') format('woff');
+} */
+
+
+input,
+button {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+input,
+button,
+input:focus,
+button:focus {
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:focus {
+    color: inherit;
+    outline: 0;
+}
+
+.center {
+    border-bottom:3px;
+    position:relative;
+    /* Edits */
+    top:0;
+    bottom: 0;
+}
+
+
+
+.search-form {
+    background: transparent;
+    color: var(--foreground);
+    z-index: 2;
+}
+
+.search-input {
+    text-align: center;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-normal);
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+}
+
+body.suggestions .search-suggestions {
+    display: flex;
+    justify-content: center;
+}
+
+.search-suggestion {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+        justify-content: center;
+}
+
+/* .search-suggestion.highlight {
+    background: var(--background);
+    color: var(--foreground);
+} */
+
+.search-suggestion b {
+    position: relative;
+    font-weight: var(--font-weight-normal);
+}
+
+/* .search-suggestion b::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    bottom: -0.3rem;
+    left: 0;
+    height: 2px;
+    background: var(--background);
+    opacity: 0.4;
+} */
+
+.search-suggestion.highlight b::after {
+    opacity: 0;
+}
+
+/* Edits */
+#output {
+    top: 0;
+    font-size: 2.5rem;
+}
+
+.help {
+    display: none;
+    z-index: 1;
+}
+
+#help {
+     background: transparent;
+}
+
+.category {
+    margin-bottom: 3rem;
+}
+
+.category-name {
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.command a {
+    display: flex;
+    position: relative;
+    margin: 1rem 0;
+    line-height: 2rem;
+}
+
+.command:last-of-type a {
+    margin-bottom: 0;
+}
+
+
+
+.command-name {
+    color: var(--foreground);
+    position: relative;
+}
+
+.command-name::after {
+    content: ' ';
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    left: 0;
+    height: 2px;
+    transition: 0.2s;
+    transform: translateX(-2rem);
+    background: var(--foreground);
+    opacity: 0;
+}
+
+body.help .command-name::after {
+    display: block;
+}
+
+.command a:hover .command-name::after,
+.command a:focus .command-name::after {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+body.help .help,
+body.form .search-form {
+    visibility: visible;
+}
+
