@@ -1,4 +1,12 @@
-   body {background-image: url("../slices/bg7.jpg");color:#FFFFFF;}
+   body {
+    background-image: url("../slices/bg1.jpg");
+    color:#FFFFFF;
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover,100%;
+  overflow-y: hidden; // hide vertical
+overflow-x: hidden; // hide horizontal
+  }
    a:visited { color: #FFFFFF; text-decoration:none; }
    a:hover { color: #FFFFFF; text-decoration:none; }
    a:active { color: #FFFFFF; text-decoration:none; }
@@ -15,11 +23,16 @@
   .container2{
     height:100%;
   }
+  ::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+    background: transparent; /* make scrollbar transparent */
+}
   .rss{
     overflow-y: scroll;
     padding-left:20px;
     margin-top: 10px;
-    background: hsla(250,10%,20%,0.5);
+   /** background: hsla(250,10%,20%,0.5); */
     border-radius: 10px;
     max-height: 84vh;
     min-width:450px;
